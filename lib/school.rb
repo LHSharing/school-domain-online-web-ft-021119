@@ -1,36 +1,107 @@
-require 'pry'
-# # School class is the model in the domain object model context
-#   # binding.pry
 class School
- attr_accessor :name, :roster #, :add_student
+  #attr_accessor :
+school = School.new("Bayside High School")
 
- #  def initialize(school_name)
- #    @school_name = name
- #    @roster = {}
- # end
- def initialize(school_name)
-     @school_name = school_name
-     @roster = {}
-   end
+# def initialize roster = []
+# end
 
 
-     def add_student(student, grade)
-        if @roster.key?(grade)
-          @roster[grade] << student
-        else
-          @roster[grade] = []
-          @roster[grade] << student
-        end
-     end
 
-    def grade(grade)
-      @roster[grade]
-    end
-
-    def sort
-      @roster.each_value(&:sort!)
-    end
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# require 'pry'
+# # # School class is the model in the domain object model context
+# #   # binding.pry
+# class School
+# attr_accessor :name, :roster #, :add_student
+
+# #  def initialize(school_name)
+# #    @school_name = name
+# #    @roster = {}
+# # end
+# def initialize(school_name)
+#     @school_name = school_name
+#     @roster = {}
+#   end
+
+
+#     def add_student(student, grade)
+#         if @roster.key?(grade)
+#           @roster[grade] << student
+#         else
+#           @roster[grade] = []
+#           @roster[grade] << student
+#         end
+#     end
+
+#     def grade(grade)
+#       @roster[grade]
+#     end
+
+#     def sort
+#       @roster.each_value(&:sort!)
+#     end
+# end
 
 
 #
